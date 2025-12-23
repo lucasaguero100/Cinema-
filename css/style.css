@@ -309,6 +309,10 @@ footer ul.redes-sociales li img:hover {
 }
 footer p { font-size: 0.9rem; opacity: 0.8; }
 
+footer h3 {
+  color: #ffd700;
+}
+
 /* DETALLE PELÍCULA */
 .detalle-body main {
   padding: 2rem;
