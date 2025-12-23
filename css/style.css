@@ -403,23 +403,52 @@ footer h3 {
   transform: scale(1.05);
 }
 
-/* Responsive */
+
+/* RESPONSIVE PARA MÓVILES */
 @media (max-width: 768px) {
+  /* Menú en columna */
+  nav ul.menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Hero más compacto */
+  .hero {
+    padding: 2rem 1rem;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Cartelera: una sola columna */
+  .cartelera {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  /* Reseñas: disposición vertical */
+  .resena {
+    flex-direction: column;
+    text-align: center;
+  }
+  .resena img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Noticias: una sola columna */
+  .noticias-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Detalle película: stack en una columna */
   .detalle-pelicula {
     grid-template-columns: 1fr;
   }
-}
 
-.btn-custom {
-  background: #ffd700;
-  color: #000;
-  font-weight: bold;
-  border-radius: 6px;
-  padding: 0.8rem 1.5rem;
-  text-decoration: none;
-  transition: background 0.3s, transform 0.2s;
-}
-.btn-custom:hover {
-  background: #fff;
-  transform: scale(1.05);
+  /* Footer: redes sociales en columna */
+  footer ul.redes-sociales {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
