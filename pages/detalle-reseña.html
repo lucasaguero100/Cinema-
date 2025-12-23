@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineManía - Detalle Reseña</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tu CSS personalizado -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="detalle-body">
+
+  <!-- NAVBAR Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">CineManía</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="./cartelera.html">Cartelera</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./reseñas.html">Reseñas</a></li>
+          <li class="nav-item"><a class="nav-link" href="./noticias.html">Noticias</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="container my-5">
+    <h2 class="text-center mb-4">Reseña completa</h2>
+    <div class="row detalle-pelicula">
+      <!-- Imagen -->
+      <div class="col-md-6">
+        <img src="../img/Gladiator2.png" alt="Póster de Gladiator 2" class="img-fluid rounded">
+      </div>
+      <!-- Info -->
+      <div class="col-md-6 detalle-info">
+        <h4>Gladiator 2</h4>
+        <p>
+          Una película que redefine el género de acción con escenas memorables y un guion sólido.
+          El director logra mantener la tensión a lo largo de toda la trama, mientras que las
+          actuaciones transmiten autenticidad y emoción.
+        </p>
+        <!-- Ficha técnica -->
+        <div class="ficha-tecnica">
+          <h5>Ficha técnica</h5>
+          <ul class="list-unstyled">
+            <li><strong>Director:</strong> Ridley Scott</li>
+            <li><strong>Año:</strong> 2025</li>
+            <li><strong>Género:</strong> Acción</li>
+            <li><strong>Duración:</strong> 148 min</li>
+            <li><strong>País:</strong> Marruecos / Malta / Inglaterra</li>
+          </ul>
+        </div>
+        <!-- Botón volver -->
+        <a href="./reseñas.html" class="btn btn-custom mt-3">⬅ Volver a reseñas</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-center text-light py-3">
+    <p>&copy; 2025 CineManía - Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
