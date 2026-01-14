@@ -1,15 +1,15 @@
-// =========================
-// VARIABLES
-// =========================
+
+/* VARIABLES */
+
 $color-bg: #111;
 $color-card: #222;
 $color-gold: #ffd700;
 $color-text: #f5f5f5;
 $font-main: 'Poppins', sans-serif;
 
-// =========================
-// MIXINS
-// =========================
+
+/* MIXINS */
+
 @mixin boton($bg, $color) {
   background: $bg;
   color: $color;
@@ -33,16 +33,16 @@ $font-main: 'Poppins', sans-serif;
   transition: transform 0.3s;
 }
 
-// =========================
-// EXTENDS
-// =========================
+
+/* EXTENDS */
+
 .card-base {
   @include card;
 }
 
-// =========================
-// RESET & GENERAL
-// =========================
+
+/* RESET & GENERAL */
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -54,9 +54,9 @@ body {
   min-height: 100vh;
 }
 
-// =========================
-// HEADER
-// =========================
+
+/* HEADER */
+
 header {
   background: linear-gradient(135deg, #000, #333);
   padding: 2rem;
@@ -85,9 +85,7 @@ nav {
   }
 }
 
-// =========================
-// HERO
-// =========================
+/* HERO */
 .hero {
   text-align: center;
   padding: 4rem 2rem;
@@ -96,9 +94,8 @@ nav {
   .boton { @include boton($color-gold, #000); }
 }
 
-// =========================
-// CARTELERA
-// =========================
+
+/* CARTELERA */
 .cartelera-body {
   main { padding: 2rem; }
   h3 {
@@ -126,10 +123,8 @@ nav {
     a { @include boton($color-gold, #000); }
   }
 }
+/* RESEÑAS */
 
-// =========================
-// RESEÑAS
-// =========================
 .resenas-body {
   main { padding: 2rem; }
   h3 {
@@ -174,6 +169,64 @@ nav {
     }
   }
 }
+
+// =========================
+// NAVBAR
+// =========================
+nav {
+  background: #000;
+  padding: 1rem;
+
+  ul.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+
+    li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+
+      &:hover { color: $color-gold; }
+    }
+  }
+}
+
+// =========================
+// FOOTER
+// =========================
+footer {
+  background: #000;
+  text-align: center;
+  padding: 1.5rem;
+
+  h3 { color: $color-gold; margin-bottom: 1rem; }
+
+  ul.redes-sociales {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+
+    li img {
+      width: 30px;
+      filter: grayscale(100%);
+      transition: filter 0.3s, transform 0.2s;
+
+      &:hover {
+        filter: grayscale(0%);
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  p { font-size: 0.9rem; opacity: 0.8; }
+}
+
 
 /* Botón dentro de reseñas */
 .resena .btn {
@@ -338,33 +391,6 @@ nav {
   transform: scale(1.05);
 }
 
-/* FOOTER */
-footer {
-  background: #000;
-  text-align: center;
-  padding: 1.5rem;
-}
-footer ul.redes-sociales {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin: 1rem 0;
-}
-footer ul.redes-sociales li img {
-  width: 30px;
-  filter: grayscale(100%);
-  transition: filter 0.3s, transform 0.2s;
-}
-footer ul.redes-sociales li img:hover {
-  filter: grayscale(0%);
-  transform: scale(1.1);
-}
-footer p { font-size: 0.9rem; opacity: 0.8; }
-
-footer h3 {
-  color: #ffd700;
-}
 
 /* DETALLE PELÍCULA */
 .detalle-body main {
