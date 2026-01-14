@@ -1,5 +1,12 @@
 @charset "UTF-8";
-/* RESET & GENERAL */
+.card-base, .resenas .resena, .cartelera .pelicula {
+  background: #222;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,18 +22,15 @@ body {
   min-height: 100vh;
 }
 
-/* HEADER */
 header {
   background: linear-gradient(135deg, #000, #333);
   padding: 2rem;
   text-align: center;
 }
-
 header h1 {
   font-size: 2.5rem;
   color: #ffd700;
 }
-
 header p {
   margin-top: 0.5rem;
   opacity: 0.8;
@@ -39,29 +43,24 @@ nav ul.menu {
   gap: 2rem;
   margin-top: 1rem;
 }
-
 nav ul.menu li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
-
 nav ul.menu li a:hover {
   color: #ffd700;
 }
 
-/* HERO */
 .hero {
   text-align: center;
   padding: 4rem 2rem;
 }
-
 .hero h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-
 .hero .boton {
   background: #ffd700;
   color: #000;
@@ -69,18 +68,16 @@ nav ul.menu li a:hover {
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  transition: transform 0.2s;
+  transition: background 0.3s, transform 0.2s;
 }
-
 .hero .boton:hover {
+  background: #ffdf33;
   transform: scale(1.05);
 }
 
-/* CARTELERA */
 .cartelera-body main {
   padding: 2rem;
 }
-
 .cartelera-body h3 {
   text-align: center;
   margin-bottom: 2rem;
@@ -94,54 +91,37 @@ nav ul.menu li a:hover {
   gap: 2rem;
   padding: 2rem;
 }
-
-.pelicula {
-  background: #222;
-  border-radius: 8px;
-  padding: 1rem;
-  text-align: center;
-  transition: transform 0.3s;
-}
-
-.pelicula:hover {
+.cartelera .pelicula:hover {
   transform: scale(1.05);
 }
-
-.pelicula img {
+.cartelera .pelicula img {
   max-width: 100%;
   border-radius: 6px;
 }
-
-.pelicula h4 {
+.cartelera .pelicula h4 {
   margin-top: 0.5rem;
   color: #ffd700;
 }
-
-.pelicula p {
+.cartelera .pelicula p {
   margin: 0.5rem 0;
 }
-
-.pelicula a {
-  display: inline-block;
-  margin-top: 0.5rem;
+.cartelera .pelicula a {
   background: #ffd700;
   color: #000;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.2s;
+}
+.cartelera .pelicula a:hover {
+  background: #ffdf33;
+  transform: scale(1.05);
 }
 
-.pelicula a:hover {
-  background: #fff;
-}
-
-/* RESEÑAS */
 .resenas-body main {
   padding: 2rem;
 }
-
 .resenas-body h3 {
   text-align: center;
   margin-bottom: 2rem;
@@ -155,25 +135,37 @@ nav ul.menu li a:hover {
   gap: 1.5rem;
   padding: 2rem;
 }
-
-.resena {
+.resenas .resena {
   display: flex;
   gap: 1rem;
-  background: #222;
-  padding: 1rem;
-  border-radius: 8px;
   align-items: center;
 }
-
-.resena img {
+.resenas .resena img {
   width: 70px;
   height: 70px;
   border-radius: 50%;
 }
-
-.resena h4 {
+.resenas .resena h4 {
   color: #ffd700;
   margin-bottom: 0.3rem;
+}
+.resenas .resena .rating {
+  color: #ffd700;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+.resenas .resena .btn {
+  background: #ffd700;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+.resenas .resena .btn:hover {
+  background: #ffdf33;
+  transform: scale(1.05);
 }
 
 /* Botón dentro de reseñas */
@@ -539,6 +531,106 @@ footer h3 {
     grid-template-columns: 1fr;
   }
   /* Footer: redes sociales en columna */
+  footer ul.redes-sociales {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes glowGold {
+  0% {
+    text-shadow: 0 0 5px #ffd700;
+  }
+  50% {
+    text-shadow: 0 0 20px #ffdf33;
+  }
+  100% {
+    text-shadow: 0 0 5px #ffd700;
+  }
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+.hero h2, .hero h1 {
+  animation: glowGold 3s infinite alternate;
+}
+
+.cartelera .pelicula {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.resenas .resena {
+  animation: slideIn 0.8s ease forwards;
+}
+
+.estrenos .estreno:hover {
+  animation: bounce 0.6s ease;
+}
+
+.boton, .btn, .boton-volver {
+  transition: transform 0.2s;
+}
+.boton:hover, .btn:hover, .boton-volver:hover {
+  transform: scale(1.05);
+}
+
+footer ul.redes-sociales li img {
+  animation: fadeUp 1s ease forwards;
+}
+
+@media (max-width: 768px) {
+  nav ul.menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .hero {
+    padding: 2rem 1rem;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  .cartelera {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .resenas .resena {
+    flex-direction: column;
+    text-align: center;
+  }
+  .resenas .resena img {
+    width: 50px;
+    height: 50px;
+  }
+  .noticias-grid {
+    grid-template-columns: 1fr;
+  }
+  .detalle-pelicula {
+    grid-template-columns: 1fr;
+  }
   footer ul.redes-sociales {
     flex-direction: column;
     gap: 0.5rem;
