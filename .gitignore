@@ -1,0 +1,31 @@
+# Ignorar archivos generados por Sass
+*.map
+
+# Ignorar CSS compilados (si solo voy a subir SCSS)
+css/*.css
+
+# Ignorar dependencias de Node
+node_modules/
+
+# Archivos temporales de macOS
+.DS_Store
+
+# Archivos temporales de Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Archivos temporales de Linux
+*~
+
+# Configuración de VSCode
+.vscode/
+
+# Configuración de JetBrains
+.idea/
+
+# Carpetas de compilación y cachés
+.cache/
+dist/
+build/
+
