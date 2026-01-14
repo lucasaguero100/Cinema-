@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* VARIABLES */
+/* MIXINS */
+/* EXTENDS */
 .card-base, .resenas .resena, .cartelera .pelicula {
   background: #222;
   border-radius: 8px;
@@ -7,6 +10,7 @@
   transition: transform 0.3s;
 }
 
+/* RESET & GENERAL */
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +26,7 @@ body {
   min-height: 100vh;
 }
 
+/* HEADER */
 header {
   background: linear-gradient(135deg, #000, #333);
   padding: 2rem;
@@ -53,6 +58,7 @@ nav ul.menu li a:hover {
   color: #ffd700;
 }
 
+/* HERO */
 .hero {
   text-align: center;
   padding: 4rem 2rem;
@@ -75,6 +81,7 @@ nav ul.menu li a:hover {
   transform: scale(1.05);
 }
 
+/* CARTELERA */
 .cartelera-body main {
   padding: 2rem;
 }
@@ -119,6 +126,7 @@ nav ul.menu li a:hover {
   transform: scale(1.05);
 }
 
+/* RESEÑAS */
 .resenas-body main {
   padding: 2rem;
 }
@@ -166,6 +174,59 @@ nav ul.menu li a:hover {
 .resenas .resena .btn:hover {
   background: #ffdf33;
   transform: scale(1.05);
+}
+
+/* NAV */
+nav {
+  background: #000;
+  padding: 1rem;
+}
+nav ul.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+}
+nav ul.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav ul.menu li a:hover {
+  color: #ffd700;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 1.5rem;
+}
+footer h3 {
+  color: #ffd700;
+  margin-bottom: 1rem;
+}
+footer ul.redes-sociales {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+footer ul.redes-sociales li img {
+  width: 30px;
+  filter: grayscale(100%);
+  transition: filter 0.3s, transform 0.2s;
+}
+footer ul.redes-sociales li img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+footer p {
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
 
 /* Botón dentro de reseñas */
@@ -364,41 +425,6 @@ nav ul.menu li a:hover {
   transform: scale(1.05);
 }
 
-/* FOOTER */
-footer {
-  background: #000;
-  text-align: center;
-  padding: 1.5rem;
-}
-
-footer ul.redes-sociales {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin: 1rem 0;
-}
-
-footer ul.redes-sociales li img {
-  width: 30px;
-  filter: grayscale(100%);
-  transition: filter 0.3s, transform 0.2s;
-}
-
-footer ul.redes-sociales li img:hover {
-  filter: grayscale(0%);
-  transform: scale(1.1);
-}
-
-footer p {
-  font-size: 0.9rem;
-  opacity: 0.8;
-}
-
-footer h3 {
-  color: #ffd700;
-}
-
 /* DETALLE PELÍCULA */
 .detalle-body main {
   padding: 2rem;
@@ -536,6 +562,7 @@ footer h3 {
     gap: 0.5rem;
   }
 }
+/* ANIMACIONES */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -575,6 +602,7 @@ footer h3 {
     transform: translateY(-5px);
   }
 }
+/* APLICACIÓN DE ANIMACIONES */
 .hero h2, .hero h1 {
   animation: glowGold 3s infinite alternate;
 }
@@ -602,6 +630,7 @@ footer ul.redes-sociales li img {
   animation: fadeUp 1s ease forwards;
 }
 
+/* RESPONSIVE */
 @media (max-width: 768px) {
   nav ul.menu {
     flex-direction: column;
