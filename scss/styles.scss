@@ -170,9 +170,8 @@ nav {
   }
 }
 
-// =========================
-// NAVBAR
-// =========================
+
+/* NAV */
 nav {
   background: #000;
   padding: 1rem;
@@ -195,9 +194,9 @@ nav {
   }
 }
 
-// =========================
-// FOOTER
-// =========================
+
+/* FOOTER */
+
 footer {
   background: #000;
   text-align: center;
@@ -531,9 +530,9 @@ footer {
     gap: 0.5rem;
   }
 }
-// =========================
-// ANIMACIONES
-// =========================
+
+/* ANIMACIONES */
+
 
 // Fade-in desde abajo
 @keyframes fadeUp {
@@ -560,9 +559,9 @@ footer {
   50%      { transform: translateY(-5px); }
 }
 
-// =========================
-// APLICACIÓN DE ANIMACIONES
-// =========================
+
+/* APLICACIÓN DE ANIMACIONES */
+
 
 // Hero con glow en el título
 .hero h2, .hero h1 {
@@ -594,9 +593,9 @@ footer {
 footer ul.redes-sociales li img {
   animation: fadeUp 1s ease forwards;
 }
-// =========================
-// RESPONSIVE
-// =========================
+
+/* RESPONSIVE */
+
 @media (max-width: 768px) {
   // Menú en columna
   nav {
