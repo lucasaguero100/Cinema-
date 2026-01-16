@@ -134,7 +134,7 @@ const peliculas = {
   },
   sinners : {
     titulo: "Sinners",
-    imagen: "../img/sinners.png",
+    imagen: "../img/sinner.png",
     sinopsis: "Tratando de descubrir sus problemáticas vidas detrás, los hermanos gemelos regresan a su ciudad natal para comenzar de nuevo, solo para descubrir que un mal aún mayor los espera para darles la bienvenida nuevamente.",
     ficha: [
       "Director: Ryan Coogler",
@@ -143,7 +143,19 @@ const peliculas = {
       "Duración: 1h 45min",
       "Estreno: 2025"
     ]
-  }
+  },
+   conjuro : {
+    titulo: "El Conjuro 4",
+    imagen: "../img/conjuro.png",
+    sinopsis: "Los Warren enfrentan un último caso paranormal que pone a prueba no solo sus habilidades como investigadores, sino también su fe y su relación. La película promete ser la despedida definitiva de la pareja en la saga, con un tono más oscuro y emocional que las anteriores",
+    ficha: [
+      "Director: Michael Chaves",
+      "Protagonistas: Vera Farmiga, Patrick Wilson, Ben Hardy, Mia Tomlison",
+      "Género: Terror / Suspenso",
+      "Duración: 2h 15min",
+      "Estreno: 2025"
+    ]
+  } 
 };
 
 // Obtener parámetro de la URL
