@@ -61,7 +61,7 @@ const peliculas = {
     ]
   },
   avatar3: {
-    titulo: "Avatar 3: El Camino del Agua",
+    titulo: "Avatar 2: El Camino del Agua",
     imagen: "../img/avatar3.png",
     sinopsis: "Jake Sully y Neytiri exploran nuevas regiones de Pandora mientras enfrentan amenazas tanto internas como externas.",
     ficha: [
@@ -155,7 +155,31 @@ const peliculas = {
       "Duración: 2h 15min",
       "Estreno: 2025"
     ]
-  } 
+  } ,
+  avatar : { 
+    titulo: "Avatar 3: Fuego y Cenizas",
+    imagen: "../img/avatar.jpeg",
+    sinopsis: "La historia retoma los eventos tras Avatar: El camino del agua. Jake Sully y Neytiri enfrentan una nueva amenaza en Pandora: el clan Ash, una tribu Na’vi hostil con una cultura más oscura y guerrera. Su líder, Varang (interpretada por Oona Chaplin), desafía directamente a los protagonistas, generando un conflicto que pone en riesgo la unidad de los Na’vi y la supervivencia de su familia.",
+    ficha: [
+      "Director: James Cameron",
+      "Protagonistas: Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang",
+      "Género: Acción / Ciencia Ficción / Aventura",
+      "Duración: 3h 17min",
+      "Estreno: 2025"
+    ]
+  }, 
+   him : {
+    titulo: "Him",
+    imagen: "../img/him.png",
+    sinopsis: "Un thriller psicológico que explora la obsesión y la identidad a través de la historia de un hombre que se enamora de una inteligencia artificial avanzada.",
+    ficha: [
+      "Director: George C. Wolfe",
+      "Protagonistas: Adam Driver, Amanda Seyfried, Jenna Ortega",
+      "Género: Thriller / Ciencia Ficción / Drama",
+      "Duración: 2h 05min",
+      "Estreno: 2025"
+    ]
+  }
 };
 
 // Obtener parámetro de la URL
