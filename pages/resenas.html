@@ -39,53 +39,65 @@
     <h2>Críticas destacadas</h2>
     <section class="resenas">
       <!-- Reseña 1 -->
-      <article class="resena">
-        <img src="../img/critico.png" alt="Juan Pérez">
-        <div>
-          <h4>Juan Pérez</h4>
-          <div class="rating">⭐⭐⭐⭐☆</div>
-          <small>Publicado el 15 de diciembre de 2025</small>
-          <p>"Una película que redefine el género de acción con escenas memorables."</p>
-          <a href="./detalle-reseña.html" class="btn">Leer más</a>
-        </div>
-      </article>
+<article class="resena">
+  <img src="../img/critico.png" alt="Juan Pérez">
+  <div>
+    <h4>Juan Pérez</h4>
+    <div class="rating">⭐⭐⭐⭐☆</div>
+    <small>Publicado el 15 de diciembre de 2025</small>
+    <p class="texto-resena">
+      "Una película que redefine el género de acción con escenas memorables.
+      <span class="extra-texto d-none"> Con secuencias innovadoras y un ritmo trepidante, logra mantener al espectador al borde del asiento. El director aprovecha cada escena para sorprender con giros inesperados y un estilo visual impactante.</span>"
+    </p>
+    <button class="btn btn-link toggle-btn">Leer más</button>
+  </div>
+</article>
 
-      <!-- Reseña 2 -->
-      <article class="resena">
-        <img src="../img/critico2.png" alt="María López">
-        <div>
-          <h4>María López</h4>
-          <div class="rating">⭐⭐⭐⭐⭐</div>
-          <small>Publicado el 18 de diciembre de 2025</small>
-          <p>"Un drama conmovedor que te atrapa desde el primer minuto."</p>
-          <a href="./detalle-reseña.html" class="btn">Leer más</a>
-        </div>
-      </article>
+<!-- Reseña 2 -->
+<article class="resena">
+  <img src="../img/critico2.png" alt="María López">
+  <div>
+    <h4>María López</h4>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <small>Publicado el 18 de diciembre de 2025</small>
+    <p class="texto-resena">
+      "Un drama conmovedor que te atrapa desde el primer minuto.
+      <span class="extra-texto d-none"> La narrativa está llena de emociones genuinas y actuaciones brillantes que transmiten profundidad. La música acompaña cada momento con delicadeza, reforzando la intensidad de la historia.</span>"
+    </p>
+    <button class="btn btn-link toggle-btn">Leer más</button>
+  </div>
+</article>
 
-      <!-- Reseña 3 -->
-      <article class="resena">
-        <img src="../img/critico.png" alt="Agustín Sanna">
-        <div>
-          <h4>Agustín Sanna</h4>
-          <div class="rating">⭐⭐⭐☆☆</div>
-          <small>Publicado el 20 de diciembre de 2025</small>
-          <p>"Aunque con altibajos, logra mantener la tensión y sorprender al espectador."</p>
-          <a href="./detalle-reseña.html" class="btn">Leer más</a>
-        </div>
-      </article>
+<!-- Reseña 3 -->
+<article class="resena">
+  <img src="../img/critico.png" alt="Agustín Sanna">
+  <div>
+    <h4>Agustín Sanna</h4>
+    <div class="rating">⭐⭐⭐☆☆</div>
+    <small>Publicado el 20 de diciembre de 2025</small>
+    <p class="texto-resena">
+      "Aunque con altibajos, logra mantener la tensión y sorprender al espectador.
+      <span class="extra-texto d-none"> Algunas escenas se sienten predecibles, pero el desenlace compensa con un giro inesperado. La fotografía y el montaje aportan un aire fresco que mantiene la atención.</span>"
+    </p>
+    <button class="btn btn-link toggle-btn">Leer más</button>
+  </div>
+</article>
 
-      <!-- Reseña 4 -->
-      <article class="resena">
-        <img src="../img/critico2.png" alt="Matías Ochoa">
-        <div>
-          <h4>Matías Ochoa</h4>
-          <div class="rating">⭐⭐⭐☆☆</div>
-          <small>Publicado el 20 de diciembre de 2025</small>
-          <p>"Muy buena película."</p>
-          <a href="./detalle-reseña.html" class="btn">Leer más</a>
-        </div>
-      </article>
-    </section>
+<!-- Reseña 4 -->
+<article class="resena">
+  <img src="../img/critico2.png" alt="Matías Ochoa">
+  <div>
+    <h4>Matías Ochoa</h4>
+    <div class="rating">⭐⭐⭐☆☆</div>
+    <small>Publicado el 20 de diciembre de 2025</small>
+    <p class="texto-resena">
+      "Muy buena película.
+      <span class="extra-texto d-none"> Aunque sencilla en su planteo, logra entretener y dejar una sensación positiva. El ritmo es constante y las actuaciones cumplen con lo esperado, ofreciendo una experiencia agradable.</span>"
+    </p>
+    <button class="btn btn-link toggle-btn">Leer más</button>
+  </div>
+</article>
+  </section>
   </main>
 
   <!-- FOOTER -->
@@ -179,5 +191,20 @@
   </footer>
     <!-- Bootstrap JS --> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  document.querySelectorAll('.toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const textoExtra = btn.previousElementSibling.querySelector('.extra-texto');
+      if (textoExtra.classList.contains('d-none')) {
+        textoExtra.classList.remove('d-none');
+        btn.textContent = 'Leer menos';
+      } else {
+        textoExtra.classList.add('d-none');
+        btn.textContent = 'Leer más';
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
