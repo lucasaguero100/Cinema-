@@ -14,7 +14,7 @@ const peliculas = {
   },
   lilo: {
     titulo: "Lilo & Stitch",
-    imagen: "../img/Lilo&Stitch.png",
+    imagen: "../img/Lilo-Stitch.png",
     sinopsis: "Una niña hawaiana adopta a un extraño 'perro' que en realidad es un experimento extraterrestre.",
     ficha: [
       "Director:s Chris Sanders, Dean DeBlois",

@@ -1,0 +1,92 @@
+@use "variables" as *;
+
+.detalle-body main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.detalle-body h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  color: $color-gold;
+}
+
+/* Contenedor principal */
+.detalle-pelicula {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background: $color-card;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+
+  &:hover { transform: scale(1.02); }
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}
+
+/* Información */
+.detalle-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  h4 {
+    font-size: 1.8rem;
+    color: $color-gold;
+  }
+
+  p {
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+}
+
+/* Ficha técnica */
+.ficha-tecnica {
+  margin-top: 1rem;
+  background: $color-bg;
+  padding: 1rem;
+  border-radius: 8px;
+
+  h5 {
+    color: $color-gold;
+    margin-bottom: 0.5rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.3rem;
+      font-size: 0.95rem;
+    }
+  }
+}
+
+/* Botón volver */
+.boton-volver {
+  display: inline-block;
+  margin-top: 2rem;
+  background: $color-gold;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s, background 0.3s;
+
+  &:hover {
+    background: #fff;
+    transform: scale(1.05);
+  }
+}

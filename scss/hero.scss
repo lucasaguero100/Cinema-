@@ -1,0 +1,17 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+
+  h2 { 
+    font-size: 2rem; 
+    margin-bottom: 1rem; 
+    animation: glowGold 3s infinite alternate; 
+  }
+
+  .boton { 
+    @include boton($color-gold, #000); 
+  }
+}

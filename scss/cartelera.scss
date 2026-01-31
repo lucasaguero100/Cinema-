@@ -1,0 +1,37 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.cartelera-body {
+  main { padding: 2rem; }
+  h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: $color-gold;
+  }
+}
+
+.cartelera {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+
+  .pelicula {
+    @include card;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 100%;
+    min-height: 400px;
+    text-align: center;
+    animation: fadeUp 0.8s ease forwards;
+
+    &:hover { transform: scale(1.05); }
+
+    img { max-width: 100%; border-radius: 6px; }
+    h4 { margin-top: 0.5rem; color: $color-gold; }
+    p { margin: 0.5rem 0; }
+    a { @include boton($color-gold, #000); }
+  }
+}

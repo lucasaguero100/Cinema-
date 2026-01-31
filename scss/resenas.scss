@@ -1,0 +1,49 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.resenas-body {
+  main { padding: 2rem; }
+  h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: $color-gold;
+  }
+}
+
+.resenas {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+
+  .resena {
+    @include card;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    text-align: left;
+    animation: slideIn 0.8s ease forwards;
+
+    img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+
+    h4 {
+      color: $color-gold;
+      margin-bottom: 0.3rem;
+    }
+
+    .rating {
+      color: $color-gold;
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .btn {
+      @include boton($color-gold, #000);
+    }
+  }
+}
