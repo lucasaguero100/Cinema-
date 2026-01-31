@@ -170,7 +170,7 @@ const peliculas = {
   }, 
    him : {
     titulo: "Him",
-    imagen: "../img/him.png",
+    imagen: "../img/Him.png",
     sinopsis: "Un thriller psicológico que explora la obsesión y la identidad a través de la historia de un hombre que se enamora de una inteligencia artificial avanzada.",
     ficha: [
       "Director: George C. Wolfe",
