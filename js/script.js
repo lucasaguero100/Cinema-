@@ -205,3 +205,13 @@ if (peliculaId && peliculas[peliculaId]) {
   document.getElementById("pelicula-titulo").textContent = "Película no encontrada";
   document.getElementById("pelicula-sinopsis").textContent = "Lo sentimos, no hay información disponible.";
 }
+
+// Animaciones en scroll
+document.addEventListener("scroll", () => {
+  document.querySelectorAll("[data-animate]").forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      el.classList.add("visible");
+    }
+  });
+});

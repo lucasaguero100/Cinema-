@@ -1,0 +1,59 @@
+// Animaciones globales
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+// Botones
+.boton {
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+    background-color: lighten(#dc3545, 10%);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+}
+
+// Tarjetas de películas / reseñas
+.pelicula, .resena, .noticia {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  &:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  }
+}
+
+// Hero con animación de entrada
+.hero {
+  animation: slideIn 1.2s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+// Íconos sociales en footer
+.wrapper .icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+  &:hover {
+    transform: rotate(10deg) scale(1.2);
+    color: #dc3545;
+  }
+}
+
+// Animación de aparición en scroll (para secciones)
+[data-animate] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+[data-animate].visible {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -545,4 +545,68 @@ footer p {
   color: #fff;
 }
 
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.boton {
+  transition: all 0.3s ease;
+}
+.boton:hover {
+  transform: scale(1.05);
+  background-color: rgb(227.5316455696, 96.4683544304, 109.0253164557);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pelicula, .resena, .noticia {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.pelicula:hover, .resena:hover, .noticia:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.hero {
+  animation: slideIn 1.2s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.wrapper .icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.wrapper .icon:hover {
+  transform: rotate(10deg) scale(1.2);
+  color: #dc3545;
+}
+
+[data-animate] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+[data-animate].visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /*# sourceMappingURL=style.css.map */
