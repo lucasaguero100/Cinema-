@@ -2,7 +2,7 @@
 const peliculas = {
   gladiator: {
     titulo: "Gladiator 2",
-    imagen: "../img/Gladiator2.png",
+    imagen: "../img/gladiator2.png",
     sinopsis: "La esperada secuela del clásico épico. Lucius enfrenta nuevos desafíos en el Imperio Romano.",
     ficha: [
       "Director: Ridley Scott",
@@ -86,7 +86,7 @@ const peliculas = {
   },
   zootopia2: {
     titulo: "Zootopia 2",
-    imagen: "../img/Zootopia2.png",
+    imagen: "../img/zootopia2.png",
     sinopsis: "Judy Hopps y Nick Wilde se embarcan en una nueva aventura para resolver un misterio en la ciudad de Zootopia.",
     ficha: [
       "Director: Jorgen Klubien",
