@@ -2,7 +2,7 @@
 const peliculas = {
   gladiator: {
     titulo: "Gladiator 2",
-    imagen: "../img/Gladiator2.png",
+    imagen: "../img/gladiator2.png",
     sinopsis: "La esperada secuela del clásico épico. Lucius enfrenta nuevos desafíos en el Imperio Romano.",
     ficha: [
       "Director: Ridley Scott",
